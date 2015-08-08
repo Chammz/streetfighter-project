@@ -1,5 +1,6 @@
 $(document).ready(function() {
-	
+	doIntro();
+
 	$('.ryu').mouseenter(function() {
     	$('.ryu-still').hide();
 		$('.ryu-ready').show();
@@ -60,9 +61,6 @@ $(document).keydown(function(e) {
 
 
 function doIntro() {
-  $('#theme-song')[0].volume = 0.3;
-  $('#theme-song')[0].load();
-  $('#theme-song')[0].play();
   $('.sf-logo').fadeIn(3500, function() {
     $(this).fadeOut(1000, function() {
       $('.brought-by').fadeIn(1500, function() {
